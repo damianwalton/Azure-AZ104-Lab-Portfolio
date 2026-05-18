@@ -16,22 +16,22 @@ To establish a highly secure corporate identity perimeter using Microsoft Entra 
 - Enforced the Principle of Least Privilege (PoLP) by restricting financial production assets to explicit scopes.
 - *Verification Log:* Active identity matrix and role allocations:
   
-![RBAC Mapping](01-rbac-assignments.png)
+![RBAC Mapping](domain-01-identity/01-rbac-assignments.png)
 
 #### 2. Least-Privilege Access Enforcement
 - Validated role isolation using an audit test user account to attempt unauthorized modification behaviors.
 - *Verification Log:* The Azure control plane successfully terminates unauthorized provisioning actions:
 
-![Access Denied](02-access-denied.png)
+![Access Denied](domain-01-identity/02-access-denied.png)
 
 #### 3. Automated Governance Guardrails
 - Implemented an Azure Policy assignment enforcing strict regional compliance to prevent shadow IT and cost overruns.
 - *Verification Log:* Automated policy intervention blocking a non-compliant deployment layout:
 
-![Policy Block](03-policy-blocked.png)
+![Policy Block](domain-01-identity/03-policy-blocked.png)
 
 #### 4. Blast-Radius Control & Protection
 - Deployed administrative Delete Resource Locks to safeguard core production assets from accidental removal commands.
 - *Verification Log:* Native platform defense intercepting a manual deletion attempt:
 
-![Resource Lock](04-resource-lock.png)
+![Resource Lock](domain-01-identity/04-resource-lock.png)
